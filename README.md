@@ -1,8 +1,8 @@
-# Selection Sort Implementation & Analysis | Daniyar Kairatov | Group : SE-2405
+# Selection Sort Implementation & Analysis | Group : SE-2405
 
 ##  Project Overview
 
-A comprehensive, production-quality implementation of the Selection Sort algorithm in Java, featuring extensive performance metrics, unit testing, and empirical complexity analysis. This project fulfills all academic requirements for algorithm implementation, testing, and peer review.
+A comprehensive, production-quality implementation of the Selection Sort algorithm in Java, featuring extensive performance metrics, unit testing, and empirical complexity analysis. This project fulfills all academic requirements for algorithm implementation, testing, and peer review
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Selection Sort is a simple comparison-based sorting algorithm. It works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the array and swapping it with the first unsorted element. This process continues until the entire array is sorted
