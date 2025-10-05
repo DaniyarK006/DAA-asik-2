@@ -293,14 +293,14 @@ Verifying O(n²) behavior by examining the ratio t/n²:
 
 ### Code Quality Review
 
-** Strengths:**
+ Strengths:
 - Comprehensive JavaDoc documentation
 - Proper exception handling with meaningful messages
 - Separation of concerns (algorithm, metrics, validation)
 - Extensive unit test coverage
 - Clean code following Java conventions
 
-** Suggestions: **
+ Suggestions: 
 - Consider generic implementation for Comparable types
 - Add parallel sorting option for large datasets (though limited benefit for O(n²))
 - Implement Comparator support for custom ordering
