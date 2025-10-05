@@ -1,10 +1,13 @@
-# Selection Sort Implementation & Analysis
+# Selection Sort Implementation & Analysis | Daniyar Kairatov | Group : SE-2405
 
-## 📋 Project Overview
+##  Project Overview
 
 A comprehensive, production-quality implementation of the Selection Sort algorithm in Java, featuring extensive performance metrics, unit testing, and empirical complexity analysis. This project fulfills all academic requirements for algorithm implementation, testing, and peer review.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🎯 Features
+Selection Sort is a simple comparison-based sorting algorithm. It works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the array and swapping it with the first unsorted element. This process continues until the entire array is sorted
+
+##  Features
 
 ### Core Implementation
 - **Clean, documented Selection Sort algorithm** with comprehensive JavaDoc
@@ -33,7 +36,7 @@ A comprehensive, production-quality implementation of the Selection Sort algorit
 - **Real-time metrics display**
 - **Algorithm information** and complexity details
 
-## 📊 Complexity Analysis
+##  Complexity Analysis
 
 ### Time Complexity
 
@@ -72,7 +75,7 @@ Total comparisons = Σ(i=0 to n-2) (n-i-1)
 - ✗ **Not adaptive** - doesn't benefit from pre-sorted data
 - ✓ **Minimum swaps** - at most O(n) swaps (optimal for swap-expensive systems)
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 selection-sort/
@@ -109,7 +112,7 @@ selection-sort/
 └── .gitignore
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Java 11 or higher
@@ -150,7 +153,7 @@ java -cp target/selection-sort-1.0.jar com.sorting.testing.PerformanceBenchmark
 mvn exec:java -Dexec.mainClass="com.sorting.testing.PerformanceBenchmark"
 ```
 
-## 📈 Sample Usage
+##  Sample Usage
 
 ### Basic Sorting
 ```java
@@ -183,7 +186,7 @@ List<BenchmarkResult> results = benchmark.runBenchmarks(sizes);
 benchmark.exportToCSV(results, "results.csv");
 ```
 
-## 📊 Performance Results
+##  Performance Results
 
 ### Empirical Benchmark Data (Random Input)
 
@@ -223,7 +226,7 @@ Verifying O(n²) behavior by examining the ratio t/n²:
 
 **Analysis:** The ratio t/n² remains approximately constant (≈0.0000122), confirming O(n²) time complexity. Doubling the input size quadruples the execution time.
 
-## 🧪 Testing Coverage
+##  Testing Coverage
 
 ### Unit Test Categories
 1. **Edge Cases** (5 tests)
@@ -259,21 +262,21 @@ Verifying O(n²) behavior by examining the ratio t/n²:
 
 **Total: 25 tests | Coverage: 98.7% lines, 94.2% branches**
 
-## 🔍 Peer Review Analysis
+##  Peer Review Analysis
 
 ### Algorithm Efficiency Analysis
 
 **Strengths:**
-- ✅ Correct implementation with O(1) space complexity
-- ✅ Minimal swaps (at most n-1) - optimal for write-expensive operations
-- ✅ Simple, readable code with comprehensive documentation
-- ✅ Extensive metrics tracking for empirical analysis
+- ✓  Correct implementation with O(1) space complexity
+- ✓  Minimal swaps (at most n-1) - optimal for write-expensive operations
+- ✓  Simple, readable code with comprehensive documentation
+- ✓  Extensive metrics tracking for empirical analysis
 
 **Weaknesses:**
-- ❌ O(n²) time complexity in all cases (not adaptive)
-- ❌ Not stable - equal elements may be reordered
-- ❌ No early termination for sorted input
-- ❌ Poor cache locality compared to Insertion Sort
+- ✗ O(n²) time complexity in all cases (not adaptive)
+- ✗ Not stable - equal elements may be reordered
+- ✗ No early termination for sorted input
+- ✗ Poor cache locality compared to Insertion Sort
 
 ### Optimization Suggestions
 
@@ -290,19 +293,19 @@ Verifying O(n²) behavior by examining the ratio t/n²:
 
 ### Code Quality Review
 
-**✅ Strengths:**
+** Strengths:**
 - Comprehensive JavaDoc documentation
 - Proper exception handling with meaningful messages
 - Separation of concerns (algorithm, metrics, validation)
 - Extensive unit test coverage
 - Clean code following Java conventions
 
-**Suggestions:**
+** Suggestions: **
 - Consider generic implementation for Comparable types
 - Add parallel sorting option for large datasets (though limited benefit for O(n²))
 - Implement Comparator support for custom ordering
 
-## 📝 CSV Data Format
+##  CSV Data Format
 
 The benchmark suite exports performance data in CSV format compatible with analysis tools:
 
@@ -325,7 +328,7 @@ Selection Sort,1000,random,1000000,499500,0,1856000
 - **MemoryAllocations**: Additional memory allocations (0 for in-place)
 - **ExecutionTimeNs**: Execution time in nanoseconds
 
-## 🌿 Git Branch Strategy
+##  Git Branch Strategy
 
 Following professional Git workflow:
 
@@ -356,14 +359,7 @@ test: Add property-based tests
 perf: Optimize array access pattern
 ```
 
-## 📚 Documentation
-
-- **[ALGORITHM_ANALYSIS.md](docs/ALGORITHM_ANALYSIS.md)**: Detailed complexity derivation and proof
-- **[PEER_REVIEW_TEMPLATE.md](docs/PEER_REVIEW_TEMPLATE.md)**: Guidelines for peer code review
-- **[TESTING_REPORT.md](docs/TESTING_REPORT.md)**: Test coverage and validation results
-- **JavaDoc**: Generate with `mvn javadoc:javadoc`
-
-## 🤝 Peer Review Checklist
+##  Peer Review Checklist
 
 ### Correctness
 - [ ] Algorithm produces correctly sorted output
@@ -390,7 +386,7 @@ perf: Optimize array access pattern
 - [ ] Stress tests with large inputs
 - [ ] Integration tests for CLI and benchmarks
 
-## 📊 Visualization
+##  Visualization
 
 The project includes an interactive web-based visualization showing:
 - Real-time sorting animation with color-coded states
@@ -400,7 +396,7 @@ The project includes an interactive web-based visualization showing:
 
 Access via the React component in the artifacts.
 
-## 🔗 Dependencies
+##  Dependencies
 
 ```xml
 <dependencies>
@@ -414,25 +410,20 @@ Access via the React component in the artifacts.
 </dependencies>
 ```
 
-## 📄 License
+##  License
 
-This project is created for educational purposes as part of an algorithms course.
+This project is created for educational purposes as part of an algorithms course
 
-## 👨‍💻 Author
+##  Author
+ 
+Student Name: Daniyar Kairatov
+Student ID: 240287
+Course: Design and Analysis of Algoritms 
+Assignment: Algorithmic Analysis and Peer Code Review
 
-**Your Name**  
-Student ID: [Your ID]  
-Course: Data Structures and Algorithms  
-Assignment: Algorithm Implementation and Peer Review
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Course instructors for assignment specifications
 - Peer reviewers for constructive feedback
 - Java documentation and community resources
 
----
-
-**Last Updated**: 2025-01-29  
-**Version**: 1.0.0  
-**Status**: ✅ Complete and ready for peer review
