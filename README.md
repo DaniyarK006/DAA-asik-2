@@ -1,4 +1,4 @@
-# Selection Sort Implementation & Analysis | Group : SE-2405
+# Selection Sort Implementation & Analysis 
 
 ##  Project Overview
 
