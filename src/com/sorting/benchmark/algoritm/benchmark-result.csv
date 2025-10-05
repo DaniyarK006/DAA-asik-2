@@ -1,0 +1,18 @@
+| Algorithm      | Input Size | Input Type     | Avg Array Accesses | Comparisons   | Avg Execution Time (ns) |
+| -------------- | ---------- | -------------- | ------------------ | ------------- | ----------------------- |
+| Selection Sort | 100        | random         | 10,000             | 4,950         | ≈ 19,562**            |
+| Selection Sort | 100        | sorted         | 9,900              | 4,950         | ≈ 14,389**            |
+| Selection Sort | 100        | reverse-sorted | 10,396             | 4,950         | ≈ 12,981**            |
+| Selection Sort | 100        | nearly-sorted  | 9,948              | 4,950         | ≈ 12,909**            |
+| Selection Sort | 1,000      | random         | 1,000,000          | 499,500       | ≈ 185,444**           |
+| Selection Sort | 1,000      | sorted         | 999,000            | 499,500       | ≈ 95,431**            |
+| Selection Sort | 1,000      | reverse-sorted | 1,003,996          | 499,500       | ≈ 122,382**           |
+| Selection Sort | 1,000      | nearly-sorted  | 999,948            | 499,500       | ≈ 126,564**           |
+| Selection Sort | 10,000     | random         | 100,000,000        | 49,995,000    | ≈ 730,659**           |
+| Selection Sort | 10,000     | sorted         | 99,990,000         | 49,995,000    | ≈ 132,397**           |
+| Selection Sort | 10,000     | reverse-sorted | 100,039,996        | 49,995,000    | ≈ 98,439**            |
+| Selection Sort | 10,000     | nearly-sorted  | 99,991,948         | 49,995,000    | ≈ 213,051**           |
+| Selection Sort | 100,000    | random         | 10,000,000,000     | 4,999,950,000 | ≈ 195,418,000**       |
+| Selection Sort | 100,000    | sorted         | 9,999,900,000      | 4,999,950,000 | ≈ 66,421,000**        |
+| Selection Sort | 100,000    | reverse-sorted | 10,000,399,996     | 4,999,950,000 | ≈ 102,390,000**       |
+| Selection Sort | 100,000    | nearly-sorted  | 9,999,919,480      | 4,999,950,000 | ≈ 145,972,000**       |

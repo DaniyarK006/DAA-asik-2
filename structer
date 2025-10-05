@@ -1,0 +1,32 @@
+selection-sort/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── sorting/
+│   │               ├── algorithm/
+│   │               │   └── SelectionSort.java          # Core algorithm
+│   │               ├── metrics/
+│   │               │   └── SortingMetrics.java         # Performance tracking
+│   │               ├── validation/
+│   │               │   └── InputValidator.java         # Input validation
+│   │               ├── cli/
+│   │               │   └── SelectionSortCLI.java       # Command-line interface
+│   │               └── testing/
+│   │                   └── PerformanceBenchmark.java   # Benchmarking suite
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── sorting/
+│                   └── testing/
+│                       └── SelectionSortTest.java      # Unit tests
+├── benchmarks/
+│   ├── selection_sort_benchmark.csv                    # Benchmark results
+│   └── complexity_verification.csv                     # Complexity analysis data
+├── docs/
+│   ├── ALGORITHM_ANALYSIS.md                           # Detailed complexity analysis
+│   ├── PEER_REVIEW_TEMPLATE.md                         # Peer review guidelines
+│   └── TESTING_REPORT.md                               # Test coverage report
+├── README.md
+├── pom.xml                                             # Maven configuration
+└── .gitignore

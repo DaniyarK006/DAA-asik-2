@@ -1,0 +1,41 @@
+Formulas for Calculating Selection Sort Metrics
+
+1.Comparisons = n × (n - 1) / 2
+ n = 100:   4,950
+ n = 1000:  499,500
+ n = 10000: 49,995,000
+ n = 100000: 4,999,950,000
+
+2.ArrayAccesses = 2 × Comparisons + 4 × Swaps
+
+  Random:
+  - Swaps ≈ n/2
+  - ArrayAccesses ≈ 2n² + 2n
+
+  Sorted:
+  - Swaps = 0
+  - ArrayAccesses = 2n²
+
+  Reverse-sorted:
+  - Swaps = n-1
+  - ArrayAccesses = 2n² + 4(n-1)
+
+  Nearly-sorted (5% swaps):
+  - Swaps ≈ n/20
+  - ArrayAccesses ≈ 2n² + n/5
+
+3.Swaps
+   - Sorted:         0 swaps
+   - Random:         n/2 ± 5% swaps
+   - Reverse-sorted: n-1 swaps (maximum)
+   - Nearly-sorted:  n/20 swaps (5%)
+
+4.Iteration
+   - Sorted:         0 swaps
+   - Random:         n/2 ± 5% swaps
+   - Reverse-sorted: n-1 swaps (maximum)
+   - Nearly-sorted:  n/20 swaps (5%)
+
+5.MemoryAllocations = 0
+    Selection Sort is an in-place algorithm
+    No additional memory is allocated

@@ -1,0 +1,6 @@
+| Algorithm      | Input Size | Input Type     | Array Accesses | Comparisons | Memory Allocations | Avg Execution Time (ns) | Avg Swaps | Iterations |
+| -------------- | ---------- | -------------- | -------------- | ----------- | ------------------ | ----------------------- | --------- | ---------- |
+| Selection Sort | 5,000      | random         | 25,000,000     | 12,497,500  | 0                  | ≈ 2,412,759**         | 2,498     | 4,999      |
+| Selection Sort | 5,000      | sorted         | 24,997,500     | 12,497,500  | 0                  | ≈ 1,834,897**         | 0         | 4,999      |
+| Selection Sort | 5,000      | reverse-sorted | 25,019,996     | 12,497,500  | 0                  | ≈ 1,997,406**         | 4,999     | 4,999      |
+| Selection Sort | 5,000      | nearly-sorted  | 24,998,448     | 12,497,500  | 0                  | ≈ 2,112,718**         | 237       | 4,999      |
